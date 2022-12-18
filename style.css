@@ -21,6 +21,8 @@ body {
   text-align: center;
   background-image: url("background.jpg");
   background-repeat: round;
+  background-attachment: fixed;  
+  background-size: cover;
   height: 100%;
 }
 
