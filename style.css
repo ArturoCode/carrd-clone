@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Quicksand&display=swap');
+
+html {
+  height: 100%;
+  font-family: Georgia, serif;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+body {
+  padding: 0px 16px;
+  text-align: center;
+  background-image: url("background.png");
+  background-repeat: round;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding-top: 16px;
+}
+
+#accountName {
+  font-size: 0.9em;
+}
+
+#info {
+  font-size: 1.4em;
+}
+
+.profileImage {
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 100px;
+  margin: 0 auto;
+}
+
+#socialRow {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.fa-brands{color: rgb(196, 226, 221)}
+
+ .fa-brands:hover{color:#fa9a1b}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  padding: 16px 0px 8px 0px;
+  margin-top: 20px;
+}
+
+.whiteButton {
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 12px;
+  font-size: 1em;
+  color: #fa9a1b;
+  text-decoration: none;
+}
+.whiteButton:hover {
+  background-color: #fa9a1b;
+  color: white;
+}
+
+#support {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  padding: 16px 0px 8px 0px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  color: #222222;
+  margin-top: 8px;
+  text-align: left;
+  padding: 12px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+  line-height: 1.3em;
+}
+
+.card .formFields {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 0px;
+}
+
+.card label {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+
+.card label span {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.card input {
+  border: 0.5px solid #333;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 1em;
+}
+
+.orangeButton {
+  background-color: #fa9a1b;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 1.3em;
+  color: white;
+  width: 100%;
+}
+
+.orangeButton:disabled {
+  background-color: #999999;
+}
+
+.signupResult {
+  padding: 8px 0px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.supportMe {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  padding: 16px;
+}
+
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modalContent {
+  color: black;
+  background-color: white;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.modalSubHeading {
+  padding: 8px 0px;
+}
+
+#products {
+  display: flex;
+  column-gap: 12px;
+  padding-top: 8px;
+}
+
+.product {
+  background-color: #fa9a1b;
+  padding: 16px;
+  border-radius: 4px;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.product:active {
+  background-color: #f9b254;
+}
+
+.amount {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fa9a1b;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
